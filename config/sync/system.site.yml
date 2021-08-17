@@ -1,11 +1,11 @@
 uuid: 3dc70958-38c3-42b5-a97d-0ecb1dd30a35
-name: 'Drush Site-Install'
-mail: admin@example.com
-slogan: ''
+name: 'Cornerhouse Dental Practice'
+mail: rob@cornerhouse-dental.co.uk
+slogan: 'Friendly family dental care'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
