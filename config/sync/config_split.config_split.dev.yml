@@ -6,7 +6,9 @@ id: dev
 label: Dev
 description: 'Configuration for development environment only'
 folder: ../config/dev
-module: {  }
+module:
+  devel: 0
+  devel_generate: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }
