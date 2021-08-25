@@ -1,0 +1,23 @@
+uuid: 483f91d8-2a08-4acd-8602-1c0912562361
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.staff_member
+  module:
+    - text
+id: node.staff_member.body
+field_name: body
+entity_type: node
+bundle: staff_member
+label: Biography
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

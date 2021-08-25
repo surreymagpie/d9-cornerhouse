@@ -1,0 +1,20 @@
+uuid: 2e6003d3-234f-43ed-b07b-c2e68f6aa4fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_role
+field_name: field_role
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

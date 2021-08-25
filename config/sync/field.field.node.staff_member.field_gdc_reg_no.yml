@@ -1,0 +1,23 @@
+uuid: 58be2746-32c8-49a7-ac00-e15ac77132c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gdc_reg_no
+    - node.type.staff_member
+id: node.staff_member.field_gdc_reg_no
+field_name: field_gdc_reg_no
+entity_type: node
+bundle: staff_member
+label: 'GDC Reg No'
+description: 'If this staff member is registered with the GDC, their registration number should be given here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

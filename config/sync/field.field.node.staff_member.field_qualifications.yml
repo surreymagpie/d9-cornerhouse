@@ -1,0 +1,19 @@
+uuid: da57db62-d8ff-4f61-808a-feecfa7d9869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_qualifications
+    - node.type.staff_member
+id: node.staff_member.field_qualifications
+field_name: field_qualifications
+entity_type: node
+bundle: staff_member
+label: Qualifications
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
