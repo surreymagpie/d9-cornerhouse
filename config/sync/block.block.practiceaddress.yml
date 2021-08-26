@@ -1,0 +1,25 @@
+uuid: eb2d207f-0f41-431f-b900-6f7590410bda
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5e957de2-82d4-4987-87b7-dd3d8f972481'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: practiceaddress
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:5e957de2-82d4-4987-87b7-dd3d8f972481'
+settings:
+  id: 'block_content:5e957de2-82d4-4987-87b7-dd3d8f972481'
+  label: 'Practice address'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

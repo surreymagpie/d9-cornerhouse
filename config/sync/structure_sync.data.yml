@@ -1,4 +1,3 @@
-blocks: {  }
 taxonomies:
   roles:
     -
@@ -113,3 +112,30 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: ecb90e83-ede4-48a0-9f22-ba894fc596eb
+blocks:
+  -
+    info: 'Opening times'
+    langcode: en
+    uuid: 4095020d-def1-43b0-9f8f-96c47caa80cc
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<table class=\"opening-times\">\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th class=\"day\">Day</th>\r\n\t\t\t<th class=\"time\">Morning</th>\r\n\t\t\t<th class=\"time\">Afternoon</th>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Monday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Tuesday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Wednesday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Thursday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Friday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Saturday</td>\r\n\t\t\t<td class=\"time\" colspan=\"2\">Closed</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Practice address'
+    langcode: en
+    uuid: 5e957de2-82d4-4987-87b7-dd3d8f972481
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>2 School Road<br />\r\nAshford<br />\r\nMiddlesex<br />\r\nTW15 2BW<br />\r\nUnited Kingdom</p>\r\n\r\n<p>Tel.: (01784) 253140</p>\r\n"
+          summary: ''
+          format: basic_html

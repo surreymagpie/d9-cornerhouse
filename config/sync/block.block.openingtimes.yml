@@ -1,0 +1,25 @@
+uuid: 6a74533b-519c-4544-b5a6-f940140b0a31
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4095020d-def1-43b0-9f8f-96c47caa80cc'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: openingtimes
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:4095020d-def1-43b0-9f8f-96c47caa80cc'
+settings:
+  id: 'block_content:4095020d-def1-43b0-9f8f-96c47caa80cc'
+  label: 'Opening times'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
