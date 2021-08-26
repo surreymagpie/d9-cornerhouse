@@ -20,6 +20,7 @@
         "drupal/config_split": "^1.7",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drupal/structure_sync": "^2.0",
         "drush/drush": "^10.6"
     },
     "conflict": {

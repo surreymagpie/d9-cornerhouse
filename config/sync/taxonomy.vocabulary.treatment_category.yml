@@ -1,0 +1,8 @@
+uuid: 906b4f0d-93ed-4df5-862a-b1367c8db2aa
+langcode: en
+status: true
+dependencies: {  }
+name: 'Treatment category'
+vid: treatment_category
+description: 'Types of treatment used within the practice'
+weight: 0

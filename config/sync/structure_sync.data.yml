@@ -1,0 +1,115 @@
+blocks: {  }
+taxonomies:
+  roles:
+    -
+      vid: roles
+      tid: '2'
+      langcode: en
+      name: 'Dental Nurse'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 00b6b375-9c1c-4ff1-910c-a2849c120044
+    -
+      vid: roles
+      tid: '1'
+      langcode: en
+      name: Dentist
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 20b947a2-8986-4fe6-9fe1-10f643c24dc7
+    -
+      vid: roles
+      tid: '4'
+      langcode: en
+      name: 'Practice Manager'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f62470c4-9fdf-46a3-9795-33e17bc7c8e1
+    -
+      vid: roles
+      tid: '3'
+      langcode: en
+      name: Receptionist
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 84308c1c-b763-462a-a5d4-abfe76dc3849
+  tags: {  }
+  treatment_category:
+    -
+      vid: treatment_category
+      tid: '10'
+      langcode: en
+      name: Cosmetic
+      description__value: "<p>Procedures to improve the appearance of the patient's teeth.</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: e6d82055-a5bc-4fea-9fcc-df395da82f12
+    -
+      vid: treatment_category
+      tid: '5'
+      langcode: en
+      name: Diagnostic
+      description__value: "<p>Procedures which help determine the cause of patients' symptoms</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: 49245622-63b2-40b0-b40d-e16ee33b84b0
+    -
+      vid: treatment_category
+      tid: '11'
+      langcode: en
+      name: Miscellaneous
+      description__value: "<p>A bucket for procedures which don't fit in other categories.</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: d6d05eac-e33c-4fe8-b749-f1cd7ab1743a
+    -
+      vid: treatment_category
+      tid: '6'
+      langcode: en
+      name: Periodontal
+      description__value: "<p>Treatments relating to the health of the tooth-supporting structures such as bone and gums.</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: 0429d113-9de5-4506-9435-c004dce5a771
+    -
+      vid: treatment_category
+      tid: '9'
+      langcode: en
+      name: Prosthetic
+      description__value: "<p>Methods available to replace teeth which were removed or were always missing.</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: 04cf775b-8be0-40b3-aa44-d3723dfca130
+    -
+      vid: treatment_category
+      tid: '7'
+      langcode: en
+      name: Restorative
+      description__value: "<p>Treatments which rebuild teeth following damage caused by decay, fracture or trauma.</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: f807b65c-e96d-42ec-9304-3e630c7cfb09
+    -
+      vid: treatment_category
+      tid: '8'
+      langcode: en
+      name: Surgical
+      description__value: "<p>Treatments requiring a surgical approach</p>\r\n"
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: ecb90e83-ede4-48a0-9f22-ba894fc596eb
