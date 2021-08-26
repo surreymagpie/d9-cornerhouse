@@ -139,3 +139,16 @@ blocks:
           value: "<p>2 School Road<br />\r\nAshford<br />\r\nMiddlesex<br />\r\nTW15 2BW<br />\r\nUnited Kingdom</p>\r\n\r\n<p>Tel.: (01784) 253140</p>\r\n"
           summary: ''
           format: basic_html
+menus:
+  -
+    menu_name: main
+    title: 'Home Page'
+    parent: null
+    uri: 'entity:node/1'
+    link_title: null
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 4238ed9b-e922-4d44-8b14-e23f9556c83a
