@@ -1,0 +1,12 @@
+# File: self.site.yml
+# live:
+#   host: server.domain.com
+#   user: www-admin
+#   root: /other/path/to/live/drupal
+#   uri: http://example.com
+
+prod:
+  host: staging.cornerhouse-dental.co.uk
+  user: rob
+  root: /var/www/cornerhouse-dental.co.uk
+  uri: http://staging.cornerhouse-dental.co.uk

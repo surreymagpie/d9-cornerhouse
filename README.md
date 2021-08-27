@@ -17,6 +17,11 @@ ddev start
 ddev composer install
 ddev drush site:install --existing-config -y
 ```
+
+The existing production database can be synced locally with
+```bash
+ddev drush sql:sync @prod @self
+```
 ## Production
 In production, there is no need to install development modules, e.g. `devel`. So the installation line should change to:
 ```bash
