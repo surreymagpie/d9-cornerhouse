@@ -112,6 +112,19 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: ecb90e83-ede4-48a0-9f22-ba894fc596eb
+menus:
+  -
+    menu_name: main
+    title: 'Home Page'
+    parent: null
+    uri: 'entity:node/1'
+    link_title: null
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 4238ed9b-e922-4d44-8b14-e23f9556c83a
 blocks:
   -
     info: 'Opening times'
@@ -139,16 +152,16 @@ blocks:
           value: "<p>2 School Road<br />\r\nAshford<br />\r\nMiddlesex<br />\r\nTW15 2BW<br />\r\nUnited Kingdom</p>\r\n\r\n<p>Tel.: (01784) 253140</p>\r\n"
           summary: ''
           format: basic_html
-menus:
   -
-    menu_name: main
-    title: 'Home Page'
-    parent: null
-    uri: 'entity:node/1'
-    link_title: null
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
+    info: Colophon
     langcode: en
-    uuid: 4238ed9b-e922-4d44-8b14-e23f9556c83a
+    uuid: baed90c0-6876-4050-a227-7caaa08b883d
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "&copy; [date:html_year] [site:name]\r\nRegistered as a limited company in England and Wales under company number: 06482316"
+          summary: ''
+          format: restricted_html

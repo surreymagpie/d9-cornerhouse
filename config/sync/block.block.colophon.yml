@@ -1,0 +1,25 @@
+uuid: 859ecc9b-8398-481a-994b-7b62222851e2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:baed90c0-6876-4050-a227-7caaa08b883d'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: colophon
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:baed90c0-6876-4050-a227-7caaa08b883d'
+settings:
+  id: 'block_content:baed90c0-6876-4050-a227-7caaa08b883d'
+  label: Colophon
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
