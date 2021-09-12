@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_image
+    - image.style.wide
     - node.type.page
   module:
     - image
@@ -26,9 +27,9 @@ content:
     third_party_settings: {  }
   field_image:
     weight: 102
-    label: above
+    label: hidden
     settings:
-      image_style: ''
+      image_style: wide
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -36,4 +37,6 @@ content:
   links:
     weight: 101
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
