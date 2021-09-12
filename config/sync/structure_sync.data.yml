@@ -177,3 +177,27 @@ menus:
     weight: '0'
     langcode: en
     uuid: b820684b-6ff4-47b3-88db-33e6f250ae2c
+  -
+    menu_name: footer
+    title: 'Privacy Policy'
+    parent: null
+    uri: 'entity:node/3'
+    link_title: null
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: a12c8928-f26b-4e99-ae40-e0387c629775
+  -
+    menu_name: footer
+    title: Cookies
+    parent: null
+    uri: 'entity:node/4'
+    link_title: null
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '2'
+    langcode: en
+    uuid: 0ee561a4-f7c9-46e8-a5aa-ecbb5a75855a

@@ -11,7 +11,7 @@ dependencies:
 id: practiceaddress
 theme: olivero
 region: footer_top
-weight: 0
+weight: 1
 provider: null
 plugin: 'block_content:5e957de2-82d4-4987-87b7-dd3d8f972481'
 settings:
