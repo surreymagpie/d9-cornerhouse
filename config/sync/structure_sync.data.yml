@@ -112,19 +112,6 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: ecb90e83-ede4-48a0-9f22-ba894fc596eb
-menus:
-  -
-    menu_name: main
-    title: 'Home Page'
-    parent: null
-    uri: 'entity:node/1'
-    link_title: null
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: en
-    uuid: 4238ed9b-e922-4d44-8b14-e23f9556c83a
 blocks:
   -
     info: 'Opening times'
@@ -165,3 +152,28 @@ blocks:
           value: "&copy; [date:html_year] [site:name]\r\nRegistered as a limited company in England and Wales under company number: 06482316"
           summary: ''
           format: restricted_html
+menus:
+  -
+    menu_name: main
+    title: About
+    parent: null
+    uri: 'entity:node/2'
+    link_title: null
+    description: 'About Us'
+    enabled: '1'
+    expanded: '0'
+    weight: '1'
+    langcode: en
+    uuid: f8bcfef8-14f1-4b4e-80ca-8f0a103e0c5b
+  -
+    menu_name: main
+    title: Home
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: Home
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: b820684b-6ff4-47b3-88db-33e6f250ae2c
