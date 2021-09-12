@@ -5,13 +5,12 @@ dependencies: {  }
 id: dev
 label: Dev
 description: 'Configuration for development environment only'
+weight: 0
+storage: null
 folder: ../config/dev
 module:
   devel: 0
   devel_generate: 0
 theme: {  }
-blacklist: {  }
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
-weight: 0
+complete_list: {  }
+partial_list: {  }
