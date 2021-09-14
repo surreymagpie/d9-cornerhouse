@@ -10,7 +10,7 @@ id: node.staff_member.field_role
 field_name: field_role
 entity_type: node
 bundle: staff_member
-label: Role
+label: Role(s)
 description: ''
 required: true
 translatable: false

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.staff_member.field_image
     - field.field.node.staff_member.field_qualifications
     - field.field.node.staff_member.field_role
+    - image.style.medium
     - node.type.staff_member
   module:
     - image
@@ -21,13 +22,13 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_gdc_reg_no:
-    weight: 102
-    label: above
+    weight: 3
+    label: inline
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -35,33 +36,33 @@ content:
     type: number_integer
     region: content
   field_image:
-    weight: 104
-    label: above
+    weight: 1
+    label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
   field_qualifications:
-    weight: 103
-    label: above
+    weight: 4
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_role:
-    weight: 105
-    label: above
+    weight: 5
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
