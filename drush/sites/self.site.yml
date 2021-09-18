@@ -8,5 +8,14 @@
 prod:
   host: staging.cornerhouse-dental.co.uk
   user: rob
-  root: /var/www/cornerhouse-dental.co.uk
+  root: /var/www/cornerhouse-dental.co.uk/web
   uri: http://staging.cornerhouse-dental.co.uk
+  paths:
+    - files: sites/default/files/
+  command:
+    core:
+      rsync:
+        options:
+          # recursive, copy symlinks, keep permissions and times, enable compression
+          mode: rlptz 
+          exclude-paths: 'css:js:php:styles'

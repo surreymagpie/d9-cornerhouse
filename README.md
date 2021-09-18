@@ -17,9 +17,9 @@ ddev start
 ddev composer install
 ddev drush site:install --existing-config -y
 ```
-
-The existing production database can be synced locally with:
+New content should be created on the remote site and can then be synced locally. The existing production files and database can be copied with:
 ```bash
+ddev drush core:rsync @prod:%files @self:%files
 ddev drush sql:sync @prod @self
 ddev drush cache:rebuild
 ddev drush config:import -y
