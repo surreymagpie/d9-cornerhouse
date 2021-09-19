@@ -162,7 +162,7 @@ menus:
     description: 'About Us'
     enabled: '1'
     expanded: '0'
-    weight: '1'
+    weight: '-49'
     langcode: en
     uuid: f8bcfef8-14f1-4b4e-80ca-8f0a103e0c5b
   -
@@ -174,7 +174,7 @@ menus:
     description: Home
     enabled: '1'
     expanded: '0'
-    weight: '0'
+    weight: '-50'
     langcode: en
     uuid: b820684b-6ff4-47b3-88db-33e6f250ae2c
   -
@@ -210,7 +210,7 @@ menus:
     description: null
     enabled: '1'
     expanded: '0'
-    weight: '4'
+    weight: '-46'
     langcode: en
     uuid: e2585748-87c3-4e29-ac8e-0d77af4289a7
   -

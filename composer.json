@@ -20,6 +20,7 @@
         "drupal/config_split": "^2.0.0-beta4",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drupal/media_entity_download": "^2.1",
         "drupal/pathauto": "^1.8",
         "drupal/structure_sync": "^2.0",
         "drupal/token_filter": "^1.2",

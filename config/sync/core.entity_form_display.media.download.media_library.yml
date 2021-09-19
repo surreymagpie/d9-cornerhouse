@@ -1,0 +1,20 @@
+uuid: 6a9824b8-ebfa-46fb-8321-47455d53b8b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.download.field_media_file
+    - media.type.download
+id: media.download.media_library
+targetEntityType: media
+bundle: download
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_file: true
+  name: true
+  path: true
+  status: true
+  uid: true

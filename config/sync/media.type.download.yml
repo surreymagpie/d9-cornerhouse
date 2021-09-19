@@ -1,0 +1,14 @@
+uuid: e0851851-1fa3-4a4c-bf6f-753a11a09746
+langcode: en
+status: true
+dependencies: {  }
+id: download
+label: Download
+description: 'Files for visitors to download'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name

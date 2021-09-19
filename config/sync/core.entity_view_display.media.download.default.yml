@@ -1,0 +1,27 @@
+uuid: 80efaa5d-8696-4d28-86f9-6db9dfde0f13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.download.field_media_file
+    - media.type.download
+  module:
+    - file
+id: media.download.default
+targetEntityType: media
+bundle: download
+mode: default
+content:
+  field_media_file:
+    label: visually_hidden
+    weight: 0
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

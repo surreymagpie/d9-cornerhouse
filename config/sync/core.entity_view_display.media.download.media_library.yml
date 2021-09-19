@@ -1,0 +1,30 @@
+uuid: a84f9c9c-e227-48a5-9aa3-5b5192b8a01e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.download.field_media_file
+    - image.style.medium
+    - media.type.download
+  module:
+    - image
+id: media.download.media_library
+targetEntityType: media
+bundle: download
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_file: true
+  name: true
+  uid: true
