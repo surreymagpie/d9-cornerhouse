@@ -1,16 +1,16 @@
-uuid: 5e295055-a084-4564-afaa-7e52a0fefa6b
+uuid: d5e089d9-28bd-4c3e-9365-2f8f393996eb
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.staff_member
+    - node.type.article
     - system.menu.main
   module:
     - node
     - user
-id: team
-label: Team
+id: news
+label: News
 module: views
 description: ''
 tag: ''
@@ -49,10 +49,23 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: none
+        type: mini
         options:
-          items_per_page: null
+          items_per_page: 3
           offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       style:
         type: default
       row:
@@ -126,7 +139,7 @@ display:
           table: node_field_data
           field: type
           value:
-            staff_member: staff_member
+            article: article
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -138,7 +151,7 @@ display:
           id: created
           table: node_field_data
           field: created
-          order: ASC
+          order: DESC
           entity_type: node
           entity_field: created
           plugin_id: date
@@ -149,31 +162,22 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Team
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: Hello
-            format: basic_html
-          plugin_id: text
+      title: News
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      use_more: false
+      use_more_always: true
+      use_more_text: more
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -184,21 +188,18 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: team
+      path: news
       menu:
         type: normal
-        title: Team
-        description: ''
-        expanded: false
-        parent: ''
-        weight: -48
-        context: '0'
+        title: News
         menu_name: main
+        weight: -47
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
