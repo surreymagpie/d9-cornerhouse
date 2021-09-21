@@ -210,7 +210,7 @@ menus:
     description: null
     enabled: '1'
     expanded: '0'
-    weight: '-46'
+    weight: '-45'
     langcode: en
     uuid: e2585748-87c3-4e29-ac8e-0d77af4289a7
   -
@@ -225,3 +225,15 @@ menus:
     weight: '2'
     langcode: en
     uuid: 931bb1df-a0b6-4707-b228-c153747a7a59
+  -
+    menu_name: main
+    title: Treatment
+    parent: null
+    uri: 'entity:node/31'
+    link_title: null
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-47'
+    langcode: en
+    uuid: a9c41ae9-287b-41b3-8aad-83c0e11bc707
