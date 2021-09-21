@@ -1,0 +1,22 @@
+uuid: 3b4c6290-0c34-465a-bbad-9fa32b941aa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: treatment
+label: Treatment
+type: 'canonical_entities:node'
+pattern: 'treatment/[node:title]'
+selection_criteria:
+  ce55c36a-5e43-4b09-adcc-981ab3bbd169:
+    id: node_type
+    bundles:
+      treatment_type: treatment_type
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ce55c36a-5e43-4b09-adcc-981ab3bbd169
+selection_logic: and
+weight: -5
+relationships: {  }
