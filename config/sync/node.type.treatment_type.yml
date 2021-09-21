@@ -1,0 +1,17 @@
+uuid: d9fb404c-e4ab-4c16-8055-344340327baf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Treatment type'
+type: treatment_type
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
