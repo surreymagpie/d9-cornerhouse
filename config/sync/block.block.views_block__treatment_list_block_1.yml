@@ -5,8 +5,6 @@ dependencies:
   config:
     - views.view.treatment_list
   module:
-    - ctools
-    - node
     - system
     - views
   theme:
@@ -25,21 +23,7 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      treatment_type: treatment_type
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-  node_type:
-    id: node_type
-    bundles:
-      treatment_type: treatment_type
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: '/treatment/*'
+    pages: "/treatment/*\r\n/treatment\r\n"
     negate: false
