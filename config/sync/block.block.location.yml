@@ -1,0 +1,30 @@
+uuid: 25993c2f-a1fa-47d3-8fef-b5c0924ef3ea
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:map:e96ba2a5-c742-4278-a00c-9e18bd08445f'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: location
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'block_content:e96ba2a5-c742-4278-a00c-9e18bd08445f'
+settings:
+  id: 'block_content:e96ba2a5-c742-4278-a00c-9e18bd08445f'
+  label: Location
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /location
+    negate: false

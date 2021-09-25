@@ -1,0 +1,21 @@
+uuid: 89cebac0-6f06-40d5-9c30-8eda43875d81
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.storage.block_content.field_location
+  module:
+    - geofield
+id: block_content.map.field_location
+field_name: field_location
+entity_type: block_content
+bundle: map
+label: Location
+description: 'The coordinates on which the map is centred.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield
