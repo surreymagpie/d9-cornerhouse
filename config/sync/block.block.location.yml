@@ -19,7 +19,7 @@ settings:
   id: 'block_content:e96ba2a5-c742-4278-a00c-9e18bd08445f'
   label: Location
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
