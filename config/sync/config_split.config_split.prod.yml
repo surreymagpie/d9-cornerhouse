@@ -1,14 +1,15 @@
 uuid: 84276822-65df-40ba-9e0f-21c81f529229
 langcode: en
-status: true
+status: false
 dependencies: {  }
 id: prod
 label: Prod
 description: 'Configuration for production environment only'
 weight: 0
-storage: null
+storage: folder
 folder: ../config/prod
-module: {  }
+module:
+  google_analytics: 0
 theme: {  }
 complete_list: {  }
 partial_list: {  }

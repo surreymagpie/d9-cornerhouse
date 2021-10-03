@@ -1,12 +1,12 @@
 uuid: da3fb8c1-aaff-4def-a97c-18049fcb33dc
 langcode: en
-status: true
+status: false
 dependencies: {  }
 id: dev
 label: Dev
 description: 'Configuration for development environment only'
 weight: 0
-storage: null
+storage: folder
 folder: ../config/dev
 module:
   devel: 0
