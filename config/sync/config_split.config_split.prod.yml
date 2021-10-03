@@ -10,6 +10,9 @@ storage: folder
 folder: ../config/prod
 module:
   google_analytics: 0
+  key: 0
+  mailsystem: 0
+  sendgrid_integration: 0
 theme: {  }
 complete_list: {  }
 partial_list: {  }
