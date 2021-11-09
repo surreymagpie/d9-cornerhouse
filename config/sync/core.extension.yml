@@ -60,7 +60,6 @@ module:
 theme:
   claro: 0
   stable: 0
-  dentist: 0
   classy: 0
   cornerhouse: 0
 profile: minimal
