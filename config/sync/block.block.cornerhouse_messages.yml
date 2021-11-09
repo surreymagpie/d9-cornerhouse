@@ -1,15 +1,15 @@
-uuid: e4fd24fc-3a15-4229-a5d2-301ceae9373e
+uuid: 5b9f65ef-d331-41b2-946c-688e019545d4
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - cornerhouse
 _core:
   default_config_hash: KfyaTPRJEcAyy2e5AxEfWQnuHcn4WrfvcWek7lSmHZQ
-id: olivero_messages
-theme: olivero
+id: cornerhouse_messages
+theme: cornerhouse
 region: highlighted
 weight: -5
 provider: null

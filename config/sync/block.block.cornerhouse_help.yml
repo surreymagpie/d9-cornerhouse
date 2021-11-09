@@ -1,17 +1,17 @@
-uuid: 78cd65c0-5753-4fd4-8023-0b5f041a3721
+uuid: 31a57170-3378-4f12-8f0a-0b1d2ee552a4
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - olivero
+    - cornerhouse
 _core:
   default_config_hash: VV9kqYMqLSoPSMw-XVpo0auKK0RfnbQTkqYPVQxqaV0
-id: olivero_help
-theme: olivero
-region: content_above
-weight: 0
+id: cornerhouse_help
+theme: cornerhouse
+region: help
+weight: -9
 provider: null
 plugin: help_block
 settings:

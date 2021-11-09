@@ -1,4 +1,4 @@
-uuid: aa0d53db-7f05-4388-b265-16482512cba6
+uuid: 06edc801-f1ad-49be-bc39-d6ea61490367
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,11 @@ dependencies:
     - system
     - views
   theme:
-    - olivero
-id: views_block__treatment_list_block_1
-theme: olivero
-region: sidebar
-weight: 0
+    - cornerhouse
+id: cornerhouse_views_block__treatment_list_block_1
+theme: cornerhouse
+region: sidebar_second
+weight: -9
 provider: null
 plugin: 'views_block:treatment_list-block_1'
 settings:

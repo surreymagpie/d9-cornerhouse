@@ -1,15 +1,15 @@
-uuid: 7865a021-1d66-4a8c-a4be-cc9dbe993de2
+uuid: c80af404-2dd1-4193-91cb-1814d01914bd
 langcode: en
 status: true
 dependencies:
   theme:
-    - olivero
+    - cornerhouse
 _core:
   default_config_hash: WImvmaBdDpwIqobqbDWebBnyxssRvrNEnZSQbOsvOe4
-id: olivero_page_title
-theme: olivero
-region: content_above
-weight: -5
+id: cornerhouse_page_title
+theme: cornerhouse
+region: content
+weight: -9
 provider: null
 plugin: page_title_block
 settings:

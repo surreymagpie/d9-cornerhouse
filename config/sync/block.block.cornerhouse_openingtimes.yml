@@ -1,4 +1,4 @@
-uuid: 6a74533b-519c-4544-b5a6-f940140b0a31
+uuid: 849ab963-4c91-42d2-a91c-c89da0d4808f
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - block_content
   theme:
-    - olivero
-id: openingtimes
-theme: olivero
-region: footer_top
-weight: 0
+    - cornerhouse
+id: cornerhouse_openingtimes
+theme: cornerhouse
+region: footer
+weight: -8
 provider: null
 plugin: 'block_content:4095020d-def1-43b0-9f8f-96c47caa80cc'
 settings:

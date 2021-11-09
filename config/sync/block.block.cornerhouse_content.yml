@@ -1,17 +1,17 @@
-uuid: afd4a522-49f9-4b9d-b2ac-f1d503694b8d
+uuid: f4376327-33b1-4589-86dd-837fb7aab1f9
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - cornerhouse
 _core:
   default_config_hash: BL6Gcw5Us0zai1ADadlNYLxlEblMedc_3C3lF0PjtCE
-id: olivero_content
-theme: olivero
+id: cornerhouse_content
+theme: cornerhouse
 region: content
-weight: 0
+weight: -8
 provider: null
 plugin: system_main_block
 settings:
