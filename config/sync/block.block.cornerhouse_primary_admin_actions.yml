@@ -1,13 +1,13 @@
-uuid: 00441bf6-bc65-4720-8697-c9c3030919ac
+uuid: 06034f32-4d87-4c37-98c9-1059dd6ee47a
 langcode: en
 status: true
 dependencies:
   theme:
-    - olivero
+    - cornerhouse
 _core:
   default_config_hash: sBMSSrWtP58IZaz1i3-MJ9yq_y32w1nc7N5DZJmt-4M
-id: primary_admin_actions
-theme: olivero
+id: cornerhouse_primary_admin_actions
+theme: cornerhouse
 region: highlighted
 weight: -5
 provider: null

@@ -1,4 +1,4 @@
-uuid: 859ecc9b-8398-481a-994b-7b62222851e2
+uuid: d80302ff-fa1d-4f36-b10b-720a96de0642
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - block_content
   theme:
-    - olivero
-id: colophon
-theme: olivero
-region: footer_bottom
-weight: 0
+    - cornerhouse
+id: cornerhouse_colophon
+theme: cornerhouse
+region: footer
+weight: -5
 provider: null
 plugin: 'block_content:baed90c0-6876-4050-a227-7caaa08b883d'
 settings:

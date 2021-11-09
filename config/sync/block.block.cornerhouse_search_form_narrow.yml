@@ -1,22 +1,22 @@
-uuid: b78cde59-66a5-487a-bbd0-b9b3a1be1f37
+uuid: 7249978c-5f11-410d-81f5-c4a2b93b78d7
 langcode: en
 status: true
 dependencies:
   module:
     - search
   theme:
-    - olivero
+    - cornerhouse
 _core:
-  default_config_hash: kF9mVmsseaqxC_a3r0oTNT2MOdiEdr9-6lMUfIa18eI
-id: olivero_search_form_wide
-theme: olivero
+  default_config_hash: WcXqPc7NoExO03VwGjmiiEkqTr7N2YqKzsq9Bz9Orh8
+id: cornerhouse_search_form_narrow
+theme: cornerhouse
 region: secondary_menu
-weight: -5
+weight: -8
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: 'Search form (wide)'
+  label: 'Search form (narrow)'
   provider: search
   label_display: '0'
   page_id: ''

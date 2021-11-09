@@ -1,4 +1,4 @@
-uuid: eb2d207f-0f41-431f-b900-6f7590410bda
+uuid: 835b3e88-f88f-444d-800a-2003659e8ea4
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - block_content
   theme:
-    - olivero
-id: practiceaddress
-theme: olivero
-region: footer_top
-weight: 1
+    - cornerhouse
+id: cornerhouse_practiceaddress
+theme: cornerhouse
+region: footer
+weight: -7
 provider: null
 plugin: 'block_content:5e957de2-82d4-4987-87b7-dd3d8f972481'
 settings:

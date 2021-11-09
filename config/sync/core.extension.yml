@@ -58,8 +58,11 @@ module:
   views: 10
   minimal: 1000
 theme:
-  olivero: 0
   claro: 0
+  stable: 0
+  dentist: 0
+  classy: 0
+  cornerhouse: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

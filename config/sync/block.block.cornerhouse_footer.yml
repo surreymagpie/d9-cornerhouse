@@ -1,4 +1,4 @@
-uuid: 98743b49-4b4b-4db5-a40d-a7a4b903124f
+uuid: 6e769991-432e-44b6-9004-b77bbb1d4899
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - olivero
-id: footer
-theme: olivero
-region: footer_top
-weight: 2
+    - cornerhouse
+id: cornerhouse_footer
+theme: cornerhouse
+region: footer
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

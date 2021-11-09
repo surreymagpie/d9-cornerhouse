@@ -1,17 +1,17 @@
-uuid: 86034027-ee0f-42c8-ba4e-1f693f3f7207
+uuid: 16f97c78-cea7-433c-bf69-1d99a812a23c
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - cornerhouse
 _core:
   default_config_hash: XMsRP1YhWAcorbrFWZglMYJ_SgWHyF3fyCh5vDXaUN4
-id: olivero_breadcrumbs
-theme: olivero
+id: cornerhouse_breadcrumbs
+theme: cornerhouse
 region: breadcrumb
-weight: 0
+weight: -9
 provider: null
 plugin: system_breadcrumb_block
 settings:
