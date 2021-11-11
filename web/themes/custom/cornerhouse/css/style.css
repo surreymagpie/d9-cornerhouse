@@ -53,3 +53,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.site-logo {
+  display: block;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
