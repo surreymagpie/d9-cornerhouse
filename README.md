@@ -21,7 +21,7 @@ New content should be created on the remote site and can then be synced locally.
 ```bash
 ddev auth ssh
 ddev drush core:rsync @prod:%files @self:%files
-ddev drush core:rsync @prod:%files @self:%files
+ddev drush sql:sync @prod @self
 ddev drush cache:rebuild
 ddev drush config:import -y
 ```
