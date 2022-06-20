@@ -18,12 +18,12 @@ plugin: 'views_block:treatment_list-block_1'
 settings:
   id: 'views_block:treatment_list-block_1'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: "/treatment/*\r\n/treatment\r\n"
     negate: false
+    pages: "/treatment/*\r\n/treatment\r\n"
