@@ -17,8 +17,8 @@ plugin: 'block_content:5e957de2-82d4-4987-87b7-dd3d8f972481'
 settings:
   id: 'block_content:5e957de2-82d4-4987-87b7-dd3d8f972481'
   label: 'Practice address'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full

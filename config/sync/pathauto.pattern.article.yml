@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'news/[node:title]'
 selection_criteria:
   dcaa0dfb-a2fe-4d55-9d61-ae29dcdf4dba:
-    id: node_type
-    bundles:
-      article: article
+    id: 'entity_bundle:node'
     negate: false
+    uuid: dcaa0dfb-a2fe-4d55-9d61-ae29dcdf4dba
     context_mapping:
       node: node
-    uuid: dcaa0dfb-a2fe-4d55-9d61-ae29dcdf4dba
+    bundles:
+      article: article
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -17,8 +17,8 @@ plugin: 'block_content:baed90c0-6876-4050-a227-7caaa08b883d'
 settings:
   id: 'block_content:baed90c0-6876-4050-a227-7caaa08b883d'
   label: Colophon
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

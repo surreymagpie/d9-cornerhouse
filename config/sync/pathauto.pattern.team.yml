@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'team/[node:title]'
 selection_criteria:
   1b2440f2-51a6-4290-b43a-e3c269ed530a:
-    id: node_type
-    bundles:
-      staff_member: staff_member
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 1b2440f2-51a6-4290-b43a-e3c269ed530a
     context_mapping:
       node: node
-    uuid: 1b2440f2-51a6-4290-b43a-e3c269ed530a
+    bundles:
+      staff_member: staff_member
 selection_logic: and
 weight: -5
 relationships: {  }

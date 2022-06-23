@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'treatment/[node:title]'
 selection_criteria:
   ce55c36a-5e43-4b09-adcc-981ab3bbd169:
-    id: node_type
-    bundles:
-      treatment_type: treatment_type
+    id: 'entity_bundle:node'
     negate: false
+    uuid: ce55c36a-5e43-4b09-adcc-981ab3bbd169
     context_mapping:
       node: node
-    uuid: ce55c36a-5e43-4b09-adcc-981ab3bbd169
+    bundles:
+      treatment_type: treatment_type
 selection_logic: and
 weight: -5
 relationships: {  }
