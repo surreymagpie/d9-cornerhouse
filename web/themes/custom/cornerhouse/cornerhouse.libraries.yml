@@ -3,3 +3,5 @@ global-styling:
     theme:
       //fonts.googleapis.com/css?family=Nunito+Sans:100,300,400,700,900: {}
       css/style.css: {}
+  js:
+    js/main.js: {}
