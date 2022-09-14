@@ -139,7 +139,7 @@ img {
   display: block;
   width: 32px;
   height: 8px;
-  background-color: #5080f0;
+  background-color: #5090f0;
   transition: transform 450ms ease-in, background-color 450ms ease 150ms;
 }
 
@@ -154,4 +154,34 @@ img {
 
 [aria-expanded=true] .burger::after {
   transform: translate(-32px, -12px) rotate(-45deg);
+}
+
+@media screen and (min-width: 53rem) {
+  .js .menu-toggle {
+    display: none;
+  }
+  .js .menu--main .menu {
+    position: static;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    gap: 0.5em;
+    padding-top: 0;
+    right: 0;
+  }
+  .js .menu--main .menu a:hover, .js .menu--main .menu a:focus, .js .menu--main .menu a.active {
+    text-decoration: none;
+  }
+  .js .menu--main .menu a:hover::after, .js .menu--main .menu a:focus::after, .js .menu--main .menu a.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #5090f0;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    animation: expand 800ms;
+  }
 }
