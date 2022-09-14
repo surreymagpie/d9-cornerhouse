@@ -1,0 +1,79 @@
+@use 'abstracts' as *
+
+// Hide the button if JS is unavailable
+.no-js .menu-toggle
+  display: none
+
+// When it is, show the button and hide the menu
+.js
+  .menu-toggle
+    display: block
+
+  .menu--main .menu
+    width: 20rem
+    margin-left: 0
+    max-width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    right: -20rem
+    z-index: 2000
+    background-color: #fff
+    transition: right 450ms ease-in-out
+
+    &.menu--open
+      right: 0
+
+.menu-toggle
+  padding: 0
+  position: absolute
+  top: 0.75em
+  right: 1em
+  appearance: none
+  border: none
+  height: 32px
+  width: 32px
+  cursor: pointer
+  background-color: transparent
+  z-index: 2001
+
+  &:focus
+    outline: none
+
+  // Prevent scrolling the close button away
+  &[aria-expanded="true"]
+    position: fixed
+
+//Button behaviour
+.burger
+  position: relative
+
+  &::after,
+  &::before
+    content: ''
+    position: absolute
+
+  &::before
+    top: -12px
+
+  &::after
+    top: 12px
+
+.burger,
+.burger::before,
+.burger::after
+  display: block
+  width: 32px
+  height: 8px
+  background-color: $clr-primary
+  transition: transform 450ms ease-in , background-color 450ms ease 150ms
+
+[aria-expanded="true"] .burger
+  transform: translateX(32px)
+  background-color: transparent
+
+[aria-expanded="true"] .burger::before
+  transform: translate(-32px,12px) rotate(45deg)
+
+[aria-expanded="true"] .burger::after
+  transform: translate(-32px, -12px) rotate(-45deg)

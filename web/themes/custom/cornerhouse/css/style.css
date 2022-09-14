@@ -60,3 +60,83 @@ img {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+
+.no-js .menu-toggle {
+  display: none;
+}
+
+.js .menu-toggle {
+  display: block;
+}
+.js .menu--main .menu {
+  width: 20rem;
+  margin-left: 0;
+  max-width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  z-index: 2000;
+  background-color: #fff;
+  transition: right 450ms ease-in-out;
+}
+.js .menu--main .menu.menu--open {
+  right: 0;
+}
+
+.menu-toggle {
+  padding: 0;
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  appearance: none;
+  border: none;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 2001;
+}
+.menu-toggle:focus {
+  outline: none;
+}
+.menu-toggle[aria-expanded=true] {
+  position: fixed;
+}
+
+.burger {
+  position: relative;
+}
+.burger::after, .burger::before {
+  content: "";
+  position: absolute;
+}
+.burger::before {
+  top: -12px;
+}
+.burger::after {
+  top: 12px;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+  display: block;
+  width: 32px;
+  height: 8px;
+  background-color: #5080f0;
+  transition: transform 450ms ease-in, background-color 450ms ease 150ms;
+}
+
+[aria-expanded=true] .burger {
+  transform: translateX(32px);
+  background-color: transparent;
+}
+
+[aria-expanded=true] .burger::before {
+  transform: translate(-32px, 12px) rotate(45deg);
+}
+
+[aria-expanded=true] .burger::after {
+  transform: translate(-32px, -12px) rotate(-45deg);
+}
