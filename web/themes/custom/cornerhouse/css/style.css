@@ -15,6 +15,10 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+body {
+  color: rgba(11, 24, 66, 0.8);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
@@ -54,6 +58,10 @@ img {
   height: auto;
 }
 
+body {
+  padding-inline: 1rem;
+}
+
 .site-logo {
   display: block;
   max-width: 300px;
@@ -91,7 +99,7 @@ img {
   display: inline-block;
   padding: 1rem;
   position: relative;
-  color: #171c29;
+  color: rgba(11, 24, 66, 0.8);
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1;
