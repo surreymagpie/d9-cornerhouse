@@ -109,6 +109,17 @@ body {
     order: -1;
   }
 }
+.region-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+#block-cornerhouse-account-menu,
+#block-cornerhouse-colophon {
+  grid-column: 1/-1;
+}
+
 .site-logo {
   display: block;
   max-width: 300px;
