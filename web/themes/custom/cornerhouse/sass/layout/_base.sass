@@ -1,2 +1,51 @@
 body
   padding-inline: 1rem
+
+.layout-container
+  max-width: 1200px
+  margin: 0 auto
+
+.layout-content,
+.layout-sidebar-first,
+.layout-sidebar-second
+  // padding-inline: 1rem
+
+
+@media (min-width: 40rem)
+  #main-content
+    order: 1
+
+  main
+    display: grid
+    gap: 2rem
+    grid-template-columns: 1fr 1fr
+  .layout-content
+    grid-column: 1/-1
+
+@media (min-width: 60rem)
+  // Both sidebars
+  .sidebar-first.sidebar-second
+    main
+      grid-template-columns: 1fr 3fr 1fr
+
+    .layout-content
+      grid-column: 2 / -2
+
+  // Sidebar First Only
+  .sidebar-first
+    main
+      grid-template-columns: 1fr 3fr
+
+    .layout-content
+      grid-column: 2
+
+  // Sidebar First Only
+  .sidebar-second
+    main
+      grid-template-columns: 3fr 1fr
+    .layout-content
+      grid-column: 1
+
+  .layout-sidebar-first
+    grid-column: 1
+    order: -1
