@@ -11,7 +11,7 @@ dependencies:
 id: cornerhouse_openingtimes
 theme: cornerhouse
 region: footer
-weight: -8
+weight: -9
 provider: null
 plugin: 'block_content:4095020d-def1-43b0-9f8f-96c47caa80cc'
 settings:
