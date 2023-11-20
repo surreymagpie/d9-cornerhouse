@@ -33,7 +33,6 @@
         "drupal/structure_sync": "^2.0",
         "drupal/token": "^1.13",
         "drupal/token_filter": "^2.1.0",
-        "drupal/upgrade_status": "^4.0",
         "drush/drush": "^12"
     },
     "conflict": {
