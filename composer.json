@@ -106,6 +106,6 @@
     },
     "require-dev": {
         "drupal/core-dev": "9.5.8",
-        "drupal/devel": "^4.1"
+        "drupal/devel": "^5.1"
     }
 }
