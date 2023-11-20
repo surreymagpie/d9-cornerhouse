@@ -37,7 +37,6 @@ content:
         minZoom: 1
         maxZoom: 18
         zoomFiner: 0
-      weight: ''
       icon:
         iconType: marker
         iconUrl: ''
@@ -77,6 +76,7 @@ content:
           zoom: 16
           popup: false
           options: ''
+      weight: ''
       fullscreen_control: true
     third_party_settings: {  }
     weight: 0
