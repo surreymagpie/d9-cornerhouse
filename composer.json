@@ -16,20 +16,24 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "drupal/admin_toolbar": "^3.0",
-        "drupal/config_split": "^2.0.0-beta4",
-        "drupal/core-composer-scaffold": "^9.2",
-        "drupal/core-recommended": "^9.2",
-        "drupal/google_analytics": "^4.0@alpha",
-        "drupal/key": "^1.14",
-        "drupal/leaflet": "^10.0",
+        "drupal/admin_toolbar": "^3.4.2",
+        "drupal/config_split": "^2.0.0",
+        "drupal/core-composer-scaffold": "^10",
+        "drupal/core-project-message": "^10",
+        "drupal/core-recommended": "^10",
+        "drupal/ctools": "^4.0.4",
+        "drupal/geofield": "^1.56",
+        "drupal/google_analytics": "^4.0",
+        "drupal/key": "^1.17",
+        "drupal/leaflet": "^10.2.3",
         "drupal/media_entity_download": "^2.1",
-        "drupal/pathauto": "^1.8",
-        "drupal/redirect": "^1.6",
-        "drupal/sendgrid_integration": "^2.0@beta",
+        "drupal/pathauto": "^1.12",
+        "drupal/redirect": "^1.9",
+        "drupal/sendgrid_integration": "^2.2",
         "drupal/structure_sync": "^2.0",
-        "drupal/token_filter": "^2.0",
-        "drush/drush": "^10.6"
+        "drupal/token": "^1.13",
+        "drupal/token_filter": "^2.1.0",
+        "drush/drush": "^12"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -40,7 +44,10 @@
         "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
-            "drupal/core-composer-scaffold": true
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-project-message": true,
+            "phpstan/extension-installer": true
         }
     },
     "extra": {
@@ -101,6 +108,7 @@
         }
     },
     "require-dev": {
-        "drupal/devel": "^4.1"
+        "drupal/core-dev": "^10",
+        "drupal/devel": "^5.1"
     }
 }

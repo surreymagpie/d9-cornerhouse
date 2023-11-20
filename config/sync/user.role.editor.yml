@@ -1,7 +1,19 @@
 uuid: c53f74c7-bf20-4a3d-9d90-29e24186ff9f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - media.type.download
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - file
+    - media
+    - node
+    - system
+    - taxonomy
+    - toolbar
 id: editor
 label: Editor
 weight: 3
@@ -22,6 +34,7 @@ permissions:
   - 'delete media'
   - 'delete own article content'
   - 'delete own download media'
+  - 'delete own files'
   - 'delete own page content'
   - 'delete terms in tags'
   - 'edit any article content'

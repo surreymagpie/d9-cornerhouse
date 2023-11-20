@@ -6,6 +6,8 @@ id: prod
 label: Prod
 description: 'Configuration for production environment only'
 weight: 0
+stackable: false
+no_patching: false
 storage: folder
 folder: ../config/prod
 module:
