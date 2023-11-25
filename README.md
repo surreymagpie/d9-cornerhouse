@@ -9,6 +9,12 @@ This guide assumes that
 
 are already installed, and the user can run `docker` commands without using `sudo`.
 
+Alternatively, podman can be used with my custom container image:
+
+```bash
+podman kube play kube.yaml
+```
+
 ## Development Setup
 ```bash
 git clone git@github.com:surreymagpie/d9-cornerhouse.git
