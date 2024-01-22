@@ -1,13 +1,14 @@
 # Save the output of this file and use kubectl create -f to import
 # it into Kubernetes.
 #
-# Created with podman-4.7.2
+# Created with podman-4.8.3
 apiVersion: v1
 kind: Pod
 metadata:
   annotations:
-    bind-mount-options: /home/rob/Code/d9-cornerhouse:Z
-  creationTimestamp: "2023-11-13T13:01:01Z"
+    bind-mount-options: /var/home/rob/.ssh:Z
+    bind-mount-options/drupal9-db: /var/home/rob/.ssh:Z
+  creationTimestamp: "2024-01-23T21:44:20Z"
   labels:
     app: drupal9
   name: drupal9
@@ -16,33 +17,43 @@ spec:
   - args:
     - mariadbd
     env:
+    - name: MYSQL_USER
+      value: drupal
     - name: MYSQL_ROOT_PASSWORD
       value: password
     - name: MYSQL_DATABASE
       value: drupal
-    - name: MYSQL_USER
-      value: drupal
     - name: MYSQL_PASSWORD
       value: drupal
-    image: docker.io/library/mariadb:latest
-    name: db
+    image: docker.io/library/mariadb:10.6.16
+    name: drupal9-db
     ports:
     - containerPort: 80
       hostPort: 8080
     volumeMounts:
     - mountPath: /var/lib/mysql
-      name: 6718b26bcfd8e21c5da9900de884f7d5cb84a47895aed8182ab2225ab9ad1fd7-pvc
-  - image: localhost/surreymagpie/nginx-php:drupal9
-    name: web
+      name: drupal9-data-pvc
+  - env:
+    - name: WEBROOT
+      value: web
+    image: ghcr.io/surreymagpie/nginx-php:latest
+    name: drupal9-web
     volumeMounts:
     - mountPath: /var/www/html
-      name: home-rob-Code-d9-cornerhouse-host-0
+      name: var-home-rob-Code-d9-cornerhouse-host-0
+    - mountPath: /root/.ssh
+      name: var-home-rob-.ssh-host-1
+      readOnly: true
+  restartPolicy: Always
   volumes:
-  - name: 6718b26bcfd8e21c5da9900de884f7d5cb84a47895aed8182ab2225ab9ad1fd7-pvc
+  - name: drupal9-data-pvc
     persistentVolumeClaim:
-      claimName: 6718b26bcfd8e21c5da9900de884f7d5cb84a47895aed8182ab2225ab9ad1fd7
+      claimName: drupal9-data
   - hostPath:
-      path: /home/rob/Code/d9-cornerhouse
+      path: /var/home/rob/Code/d9-cornerhouse
       type: Directory
-    name: home-rob-Code-d9-cornerhouse-host-0
-
+    name: var-home-rob-Code-d9-cornerhouse-host-0
+  - hostPath:
+      path: /var/home/rob/.ssh
+      type: Directory
+    name: var-home-rob-.ssh-host-1
