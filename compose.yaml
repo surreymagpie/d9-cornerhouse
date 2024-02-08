@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  web:
+    image: ghcr.io/surreymagpie/nginx-php:latest
+    ports:
+      - 8080:80
+    environment:
+      - WEBROOT=web
+    networks:
+      - drupal9
+    volumes:
+      - .:/var/www/html:Z,rw
+      - $HOME/.ssh:/root/.ssh:Z,ro
+
+  db:
+    image: docker.io/library/mariadb:10.6.16
+    environment:
+      - MYSQL_USER=drupal
+      - MYSQL_PASSWORD=drupal
+      - MYSQL_DATABASE=drupal
+      - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:
+
+networks:
+  drupal9:
