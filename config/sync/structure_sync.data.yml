@@ -1,3 +1,160 @@
+blocks:
+  -
+    info: 'Opening times'
+    langcode: en
+    uuid: 4095020d-def1-43b0-9f8f-96c47caa80cc
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<table class=\"opening-times\">\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th class=\"day\">Day</th>\r\n\t\t\t<th class=\"time\">Morning</th>\r\n\t\t\t<th class=\"time\">Afternoon</th>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Monday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Tuesday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Wednesday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Thursday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Friday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Saturday</td>\r\n\t\t\t<td class=\"time\" colspan=\"2\">Closed</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Practice address'
+    langcode: en
+    uuid: 5e957de2-82d4-4987-87b7-dd3d8f972481
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>2 School Road<br />\r\nAshford<br />\r\nMiddlesex<br />\r\nTW15 2BW<br />\r\nUnited Kingdom</p>\r\n\r\n<p>Tel.: (01784) 253140</p>\r\n"
+          summary: ''
+          format: basic_html
+  -
+    info: Colophon
+    langcode: en
+    uuid: baed90c0-6876-4050-a227-7caaa08b883d
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "&copy; [date:html_year] [site:name]\r\nRegistered as a limited company in England and Wales under company number: 06482316"
+          summary: ''
+          format: restricted_html
+  -
+    info: Location
+    langcode: en
+    uuid: e96ba2a5-c742-4278-a00c-9e18bd08445f
+    bundle: map
+    revision_id: null
+    rev_id_current: null
+    fields:
+      field_location:
+        -
+          value: 'POINT (-0.452663 51.428287)'
+          geo_type: Point
+          lat: 51.428287
+          lon: -0.452663
+          left: -0.452663
+          top: 51.428287
+          right: -0.452663
+          bottom: 51.428287
+          geohash: gcpstdnrkpw1
+          latlon: '51.428287,-0.452663'
+menus:
+  -
+    menu_name: main
+    title: About
+    parent: null
+    uri: 'entity:node/2'
+    link_title: null
+    description: 'About Us'
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: f8bcfef8-14f1-4b4e-80ca-8f0a103e0c5b
+  -
+    menu_name: main
+    title: Home
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: Home
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: b820684b-6ff4-47b3-88db-33e6f250ae2c
+  -
+    menu_name: footer
+    title: 'Privacy Policy'
+    parent: null
+    uri: 'entity:node/3'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: 1
+    langcode: en
+    uuid: a12c8928-f26b-4e99-ae40-e0387c629775
+  -
+    menu_name: footer
+    title: Cookies
+    parent: null
+    uri: 'entity:node/4'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 0ee561a4-f7c9-46e8-a5aa-ecbb5a75855a
+  -
+    menu_name: main
+    title: Feedback
+    parent: null
+    uri: 'entity:node/5'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -44
+    langcode: en
+    uuid: e2585748-87c3-4e29-ac8e-0d77af4289a7
+  -
+    menu_name: footer
+    title: 'Quality Assurance'
+    parent: null
+    uri: 'entity:node/6'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: 2
+    langcode: en
+    uuid: 931bb1df-a0b6-4707-b228-c153747a7a59
+  -
+    menu_name: main
+    title: Treatment
+    parent: null
+    uri: 'entity:node/31'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: en
+    uuid: a9c41ae9-287b-41b3-8aad-83c0e11bc707
+  -
+    menu_name: main
+    title: Location
+    parent: null
+    uri: 'entity:node/32'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -46
+    langcode: en
+    uuid: 72899fee-742a-4c7f-b05d-7a6876d673ba
 taxonomies:
   roles:
     -
@@ -112,160 +269,3 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: ecb90e83-ede4-48a0-9f22-ba894fc596eb
-blocks:
-  -
-    info: 'Opening times'
-    langcode: en
-    uuid: 4095020d-def1-43b0-9f8f-96c47caa80cc
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<table class=\"opening-times\">\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th class=\"day\">Day</th>\r\n\t\t\t<th class=\"time\">Morning</th>\r\n\t\t\t<th class=\"time\">Afternoon</th>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Monday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Tuesday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Wednesday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Thursday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Friday</td>\r\n\t\t\t<td class=\"time\">0830 - 1300</td>\r\n\t\t\t<td class=\"time\">1400 - 1700</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"day\">Saturday</td>\r\n\t\t\t<td class=\"time\" colspan=\"2\">Closed</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
-          summary: ''
-          format: full_html
-  -
-    info: 'Practice address'
-    langcode: en
-    uuid: 5e957de2-82d4-4987-87b7-dd3d8f972481
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>2 School Road<br />\r\nAshford<br />\r\nMiddlesex<br />\r\nTW15 2BW<br />\r\nUnited Kingdom</p>\r\n\r\n<p>Tel.: (01784) 253140</p>\r\n"
-          summary: ''
-          format: basic_html
-  -
-    info: Colophon
-    langcode: en
-    uuid: baed90c0-6876-4050-a227-7caaa08b883d
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "&copy; [date:html_year] [site:name]\r\nRegistered as a limited company in England and Wales under company number: 06482316"
-          summary: ''
-          format: restricted_html
-  -
-    info: Location
-    langcode: en
-    uuid: e96ba2a5-c742-4278-a00c-9e18bd08445f
-    bundle: map
-    revision_id: null
-    rev_id_current: null
-    fields:
-      field_location:
-        -
-          value: 'POINT (-0.452663 51.428287)'
-          geo_type: Point
-          lat: 51.428287
-          lon: -0.452663
-          left: -0.452663
-          top: 51.428287
-          right: -0.452663
-          bottom: 51.428287
-          geohash: gcpstdnrkpw1
-          latlon: '51.428287,-0.452663'
-menus:
-  -
-    menu_name: main
-    title: About
-    parent: null
-    uri: 'entity:node/2'
-    link_title: null
-    description: 'About Us'
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
-    langcode: en
-    uuid: f8bcfef8-14f1-4b4e-80ca-8f0a103e0c5b
-  -
-    menu_name: main
-    title: Home
-    parent: null
-    uri: 'internal:/'
-    link_title: ''
-    description: Home
-    enabled: '1'
-    expanded: '0'
-    weight: '-50'
-    langcode: en
-    uuid: b820684b-6ff4-47b3-88db-33e6f250ae2c
-  -
-    menu_name: footer
-    title: 'Privacy Policy'
-    parent: null
-    uri: 'entity:node/3'
-    link_title: null
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '1'
-    langcode: en
-    uuid: a12c8928-f26b-4e99-ae40-e0387c629775
-  -
-    menu_name: footer
-    title: Cookies
-    parent: null
-    uri: 'entity:node/4'
-    link_title: null
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '0'
-    langcode: en
-    uuid: 0ee561a4-f7c9-46e8-a5aa-ecbb5a75855a
-  -
-    menu_name: main
-    title: Feedback
-    parent: null
-    uri: 'entity:node/5'
-    link_title: null
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-44'
-    langcode: en
-    uuid: e2585748-87c3-4e29-ac8e-0d77af4289a7
-  -
-    menu_name: footer
-    title: 'Quality Assurance'
-    parent: null
-    uri: 'entity:node/6'
-    link_title: null
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '2'
-    langcode: en
-    uuid: 931bb1df-a0b6-4707-b228-c153747a7a59
-  -
-    menu_name: main
-    title: Treatment
-    parent: null
-    uri: 'entity:node/31'
-    link_title: null
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-47'
-    langcode: en
-    uuid: a9c41ae9-287b-41b3-8aad-83c0e11bc707
-  -
-    menu_name: main
-    title: Location
-    parent: null
-    uri: 'entity:node/32'
-    link_title: null
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-46'
-    langcode: en
-    uuid: 72899fee-742a-4c7f-b05d-7a6876d673ba

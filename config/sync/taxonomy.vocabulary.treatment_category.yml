@@ -6,3 +6,4 @@ name: 'Treatment category'
 vid: treatment_category
 description: 'Types of treatment used within the practice'
 weight: 0
+new_revision: false
