@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Staff member'
 type: staff_member
 description: 'Add details about each staff member'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false
