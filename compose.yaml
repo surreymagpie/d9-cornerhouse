@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: ghcr.io/surreymagpie/nginx-php:latest
+    image: ghcr.io/surreymagpie/nginx-php:8.3
     ports:
       - 8080:80
     environment:
@@ -14,7 +14,7 @@ services:
       - $HOME/.ssh:/root/.ssh:Z,ro
 
   db:
-    image: docker.io/library/mariadb:10.6.16
+    image: docker.io/library/mariadb:11
     environment:
       - MYSQL_USER=drupal
       - MYSQL_PASSWORD=drupal
